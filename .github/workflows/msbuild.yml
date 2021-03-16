@@ -39,4 +39,5 @@ jobs:
           name: CustomerGreeter
           path: | 
            CustomerGreeter\bin\Release\CustomerGreeter.exe 
+           CustomerGreeter\bin\Release\*.dll
            CustomerGreeter\bin\Release\customers.txt
