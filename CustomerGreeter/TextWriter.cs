@@ -22,7 +22,7 @@ namespace CustomerGreeter
             try
             {
                 var orderedCustomers = customers.OrderBy(c => c.User_Id).ToList();
-                using (var streamFile = File.OpenWrite(AppDomain.CurrentDomain.BaseDirectory + "../output.txt"))
+                using (var streamFile = File.OpenWrite(AppDomain.CurrentDomain.BaseDirectory + "/output.txt"))
                 {
                     foreach (var customer in orderedCustomers)
                     {
