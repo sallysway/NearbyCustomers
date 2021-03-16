@@ -29,7 +29,7 @@ namespace CustomerGreeter
             }
 
             _logger.LogInformation($"Returning {customersWithinDistance.Count} customers which are located within {distance} km from the office");
-            return customersWithinDistance;
+            return customersWithinDistance.OrderBy(c => c.User_Id).ToList();
         }
     }
 }
